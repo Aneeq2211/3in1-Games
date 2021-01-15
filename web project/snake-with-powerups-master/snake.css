@@ -11,6 +11,29 @@ body {
 		font-size: 18px;
     box-sizing: border-box;
 }
+/* unvisited link */
+a:link {
+	color:inherit;
+	text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+	color:inherit;
+	text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color:inherit;
+	text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+	color:inherit;
+	text-decoration: none;
+  }
 
 button {
 	padding:10px;
@@ -43,19 +66,46 @@ h1{ display:block;
 		right:0px;
 		top:3%;
 		z-index:10;
-		background-color: lightgreen;
+		background-color: rgb(199, 37, 32);
     transition: all 1s;
 }
 
 h1:hover {
-  color: lightgreen;
+  color: rgb(199, 37, 32);
   background-color:black;
   right:10px;
-  border: 3px solid lightgreen;
+  border: 3px solid rgb(199, 37, 32);
+}
+
+h2{ display:block;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 10px black;
+		text-shadow: -1px 0px black, 1px 0px black, 0px 1px black, 0px -1px black;
+    width: 150px;
+		border:3px solid #212121;
+		padding: 5px 0px 5px 10px;
+		margin:0px;
+		font-size: 20px;
+		font-variant: small-caps;
+		font-weight: 500;
+		line-height: 26.4px;
+		right:0px;
+		top:3%;
+		float: left;
+		z-index:10;
+		background-color: rgb(199, 37, 32);
+    transition: all 1s;
+}
+
+h2:hover {
+  color: rgb(199, 37, 32);
+  background-color:black;
+  right:10px;
+  border: 3px solid rgb(199, 37, 32);
 }
 
 canvas {
-  border:2px solid #666;
+  border:2px solid rgb(56, 53, 53);
   padding:0;
   margin-top: 50px;
   margin-left: 50%;
