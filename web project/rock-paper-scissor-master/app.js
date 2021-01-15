@@ -1,16 +1,17 @@
+var pScore = 0;
+var cScore = 0;
 const game = () => {
-  let pScore = 0;
-  let cScore = 0;
-
   //Start the Game
   const startGame = () => {
     const playBtn = document.querySelector(".intro button");
     const introScreen = document.querySelector(".intro");
     const match = document.querySelector(".match");
+    const scoreBoard=document.querySelector(".score");
 
     playBtn.addEventListener("click", () => {
       introScreen.classList.add("fadeOut");
       match.classList.add("fadeIn");
+      scoreBoard.classList.add("fadeIn");
     });
   };
   //Play Match
@@ -40,10 +41,10 @@ const game = () => {
           //Update Images
           playerHand.src = `./assets/${this.textContent}.png`;
           computerHand.src = `./assets/${computerChoice}.png`;
-        }, 500);
+        }, 2000);
         //Animation
-        playerHand.style.animation = "shakePlayer 1s ease";
-        computerHand.style.animation = "shakeComputer 1s ease";
+        playerHand.style.animation = "shakePlayer 2s ease";
+        computerHand.style.animation = "shakeComputer 2s ease";
       });
     });
   };
@@ -114,3 +115,14 @@ const game = () => {
 
 //start the game function
 game();
+
+function home(){
+  location.reload();
+}
+
+function reset_it(){
+  pScore = 0;
+  cScore = 0;
+  document.getElementById("sc_p").innerHTML=0;
+  document.getElementById("sc_c").innerHTML=0;
+}
