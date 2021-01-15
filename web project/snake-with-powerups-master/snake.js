@@ -67,7 +67,7 @@ window.onload = function () {
 
   //UPDATE CANVAS
   setInterval( function() {
-    if(options.wall === true) {canvas.style.border = "2px dashed lightgreen"}
+    if(options.wall === true) {canvas.style.border = "2px dashed rgb(199, 37, 32)"}
     else if (options.wall === false) {canvas.style.border = "2px solid #666"}
     if (!twoplayer) {
       move(player);
